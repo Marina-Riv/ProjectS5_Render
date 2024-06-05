@@ -14,4 +14,4 @@ if hist_button:
 build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram:
-    st.write('Construir un histograma para la columna model')
+    st.write('Construir un histograma para la columna model')    

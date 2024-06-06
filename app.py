@@ -22,5 +22,5 @@ scatter_button = st.button('Construir un diagrama de dispersión')
 
 if scatter_button:
     st.write('Construir un diagrama de dispersión de los precios por tipo de vehiculo')
-    fig = px.scatter(vehicles_data, x="type", y="price")
+    fig = px.scatter(vehicle_data, x="type", y="price")
     st.plotly_chart(fig, use_container_width=True)

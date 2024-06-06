@@ -14,6 +14,13 @@ if hist_button:
 build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram:
-    st.write('Construir un histograma para la condicion de los vehiculos')
+    st.write('Construir un histograma para la condicion de los vehiculos disponibles')
     fig = px.histogram(vehicle_data, x="condition")
-    st.plotly_chart(fig, use_container_width=True)  
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_button = st.button('Construir un diagrama de dispersión')
+
+if scatter_button:
+    st.write('Construir un diagrama de dispersión de los precios por tipo de vehiculo')
+    fig = px.scatter(vehicles_data, x="type", y="price")
+    st.plotly_chart(fig, use_container_width=True)
